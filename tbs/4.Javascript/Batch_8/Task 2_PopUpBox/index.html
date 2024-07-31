@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Popup Box</title>
+		<script type="text/javascript">
+			function myalert()
+			{
+				alert("Welcome, \nHow are you Today?");
+			}
+			function myconfirm()
+			{
+				var val = confirm("Want to Move Another Page?");
+				if(val==true)
+				{
+					window.location="show.html";
+				}
+				else
+				{
+					alert("User Press Cancel");
+					
+				}
+			}
+			
+			function myprompt()
+			{
+				var val = prompt("Enter Your Name.","");
+				if(val==null)
+				{
+					var msg =("User Press Cancel");
+					document.getElementById("msg").innerHTML = msg ; 
+				}
+				else
+				{
+					if(val=="")
+					{
+						var msg =("Please Enter Your Name");
+						document.getElementById("msg").innerHTML = msg ; 
+					}
+					else
+					{
+						var msg ="Welcome "+val;
+						document.getElementById("msg").innerHTML = msg ; 
+					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="return myalert();">Alert Box</button>
+		<br/><br/>
+		<button type="button" onclick="return myconfirm();">Confirm Box</button>
+		<br/><br/>
+		<button type="button" onclick="return myprompt();">Prompt Box</button>
+		<span id="msg"></span>
+	</body>
+</html>

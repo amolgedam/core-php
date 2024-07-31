@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQ-AJAX</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Online Google Snippet 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	-->
+		<style>
+			.error
+			{
+				background-color:red;
+				color:#fff;
+				padding:2px;
+				margin:2px 0px;
+			}
+		</style>
+		
+		<!-- Offline Library -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<center>
+		<button type="button" id="mybutton">Click Here</button>
+		<h1>WELCOME</h1>
+		<table cellpadding="10px" cellspacing="0px" width="400px" align="center" border="1" >
+			<tr id="msgtr">
+				<td colspan="2" id="msg"></td>
+			</tr>
+			<tr>
+				<td>Name :</td>
+				<td><input type="text" id="name" />
+				<div class="error" id="ename"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>Email :</td>
+				<td><input type="text" id="email"/>
+				<div class="error" id="eemail"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile :</td>
+				<td><input type="text" id="mobile"/>
+				<div class="error" id="emobile"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="button" id="save" value="Save"/>
+				<input type="button" id="show" value="Show Data"/>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+</html>	

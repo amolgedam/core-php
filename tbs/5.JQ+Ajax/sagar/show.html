@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Show Data</title>
+		<link href="css/style.css" rel="stylesheet"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$("document").ready(function(){
+				$("#loaddata").load("show.php");
+				$("#name").hide();
+			});
+		</script>
+	</head>
+	<body>
+<header>
+<div class="header_left"><img src="images/opencart_logo.png" alt="logo" id="logo"></div>
+</header>
+<div id="container2">
+		<center>
+		<h1>Display Details</h1>
+		<div id="loaddata"></div>
+</div>
+</center>
+<div id="footer"><h3>OPENCART</h3></div>
+	</body>
+</html>	

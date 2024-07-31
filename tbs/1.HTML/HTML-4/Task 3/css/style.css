@@ -1,0 +1,41 @@
+body
+{
+	margin:0px;
+	font-family:Cambria;
+}
+.myheading
+{
+	background-color:#7E9C1A;
+	color:#ffffff;
+	text-align:right;
+	font-weight:bold;
+	padding:10px 10px 10px 0px;
+	width:250px;
+	font-size:17px;
+}
+.mylabels
+{
+	text-align:right;
+	padding:8px;
+	border-right:3px solid #BEBEBE;
+}
+span
+{
+	color:red;
+}
+.mycontrols
+{
+	padding:8px;
+}
+.textbox
+{
+	width:250px;
+}
+.dottedline
+{
+	border-top:2px dotted #333333;
+}
+#submit
+{
+	background-color:orange;
+}

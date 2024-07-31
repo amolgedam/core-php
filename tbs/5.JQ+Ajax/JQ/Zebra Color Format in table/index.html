@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>create a Zebra Stripes table effect using jQuery</title>
+<style type="text/css">
+.container {
+	width: 500px;
+	margin: 0px auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table tr td{
+	width: 50%;
+	border: 1px solid #e3e3e3;
+	padding: 5px;
+}
+table tr th{
+	border: 1px solid #e3e3e3;
+	padding: 5px;
+}
+.zebra{
+	background-color: #e3e3e3;
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert('hi');
+		$("tr:odd").addClass("zebra");
+	});
+</script>
+</head>
+<body>
+<div class="container">
+	<h1>create a Zebra Stripes table effect using jQuery</h1>
+	
+	<table>
+		<tr>
+			<th>Country</th>
+			<th>Capital</th>
+		</tr>
+		<tr>
+			<td>India</td>
+			<td>New Delhi</td>
+		</tr>
+		<tr>
+			<td>New Zealand</td>
+			<td>Wellington</td>
+		</tr>
+		<tr>
+			<td>Germany</td>
+			<td>Berlin</td>
+		</tr>
+		<tr>
+			<td>Nepal</td>
+			<td>Kathmandu</td>
+		</tr>
+		<tr>
+			<td>Japan</td>
+			<td>Tokyo</td>
+		</tr>
+		<tr>
+			<td>Russia</td>
+			<td>Moscow</td>
+		</tr>
+		<tr>
+			<td>France</td>
+			<td>Paris</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

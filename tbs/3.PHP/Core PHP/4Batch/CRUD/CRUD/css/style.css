@@ -1,0 +1,38 @@
+body{margin:0px;font-family:cambria;}
+h1
+{
+	margin:0px;
+	padding:10px;
+	font-weight:normal;
+	background-color:#006666;
+	color:#ffffff;
+	margin-bottom:100px;
+}
+h6
+{
+	margin:0px;
+	margin-top:100px;
+	padding:10px;
+	font-weight:normal;
+	background-color:#006666;
+	color:#ffffff;
+	text-align:center;
+}
+.errors
+{
+	background-color:red;
+	color:#fff;
+	padding:3px;
+}
+a{
+	color:red;
+	font-weight:bold;
+	text-decoration:none;
+}
+button{font-weight:bold;color:red;}
+th{background-color:#ccc;}
+#current
+{
+	background-color:#ccc;
+	padding:3px;
+}

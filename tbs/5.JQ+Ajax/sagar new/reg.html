@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$("document").ready(function(){
+			//alert("Page loding JQ Successfully");	
+				$("#update").hide();
+				$("#confirm").hide();
+				$(".error").hide();
+		
+	$("#save").click(function(){
+					$("#save").hide();
+					$("#update").show();
+					$("#confirm").show();
+					$('input:text').attr("readonly", "readonly");
+					
+					var name = $("#name").val();
+					var email = $("#email").val();
+					var mobile = $("#mobile").val();
+					
+					var pattern_name=/^[A-Za-z' ]{1,80}$/i;
+					var pattern_email=/^[a-z0-9._-]+@[a-z]+.[a-z.]{2,5}$/i;
+					//alert(name + email + mobile);
+					
+					if(name=="")
+					{
+						var ename = "Please Enter Name";
+						$("#ename").text(ename).show();
+						setTimeout(function(){
+							$("#ename").fadeOut("slow");
+						},3000);
+						$("#name").focus();
+						$("#update").hide();
+						$("#confirm").hide();
+						$("#save").show();
+						$('input:text').removeAttr("readonly");
+						return false;
+					}
+					else if(!pattern_name.test(name))
+					{
+						var ename = "Please Enter Valid Name";
+						$("#name").text(name).show();
+						setTimeout(function(){
+							$("#name").fadeOut("slow");
+						},3000);
+						$("#name").focus();
+						$("#update").hide();
+						$("#confirm").hide();
+						$("#save").show();
+						$('input:text').removeAttr("readonly");
+						return false;
+					}
+					
+					if(email=="")
+					{
+						var eemail = "Please Enter Email";
+						$("#eemail").text(eemail).show();
+						setTimeout(function(){
+							$("#eemail").fadeOut("slow");
+						},3000);
+						$("#email").focus();
+						$("#update").hide();
+						$("#confirm").hide();
+						$("#save").show();
+						$('input:text').removeAttr("readonly");
+						return false;
+					}
+					else if(!pattern_email.test(email))
+					{
+						var eemail = "Please Enter Valid Email";
+						$("#eemail").text(eemail).show();
+						setTimeout(function(){
+							$("#eemail").fadeOut("slow");
+						},3000);
+						$("#email").focus();
+						$("#update").hide();
+						$("#confirm").hide();
+						$("#save").show();
+						$('input:text').removeAttr("readonly");
+						return false;
+					}
+					if(mobile=="")
+					{
+						var emobile = "Please Enter Mobile";
+						$("#emobile").text(emobile).show();
+						setTimeout(function(){
+							$("#emobile").fadeOut("slow");
+						},3000);
+						$("#mobile").focus();
+						$("#update").hide();
+						$("#confirm").hide();
+						$("#save").show();
+						$('input:text').removeAttr("readonly");
+						return false;
+					}
+			});
+					
+				
+	$("#update").click(function(){
+					$("#save").show();
+					$("#update").hide();
+					$("#confirm").hide();
+					$('input:text').removeAttr("readonly");
+				
+				});
+				
+	$("#confirm").click(function(){
+					$('input:text').removeAttr("readonly");
+					var name = $("#name").val();
+					var email = $("#email").val();
+					var mobile = $("#mobile").val();
+					//alert(name + email + mobile);
+						var datastring = "name="+name+"&email="+email+"&mobile="+mobile;
+						
+						$.ajax({
+							type:'POST',
+							url:'add.php',
+							data:datastring,
+							cache:false,
+							
+							success:function(returndata){
+								//alert(returndata);
+								if(returndata == 0)
+								{
+									alert("Please Enter All Details");
+								}
+								else if(returndata == 1)
+								{
+									alert("Mobile already Register");
+								}	
+								else
+								{
+									alert("The OTP is Sent");
+								}								
+							}
+						
+						});
+						window.location='otp.html';
+				});
+		});
+</script>
+</head>
+<body>
+<div id="container">
+<!-- Header -->
+<header>
+<div class="header_left"><img src="images/opencart_logo.png" alt="logo" id="logo"></div>
+</header>
+<!-- Header -->
+<center>
+<table cellpadding="0px" cellspacing="0px" width="400px" height="300px"align="center" border="0px" id="form-table">
+<tr> 
+	<td colspan="2"><img src="images/opencart_logo.png" alt="cart" id="t-logo"/></td>
+</tr>
+<tr>
+	<td class="lable" colspan="2">Name: </td>
+</tr>
+<tr>
+	<td colspan="2"><input type="text" id="name"/>
+	<div class="error" id="ename"></div>
+	</td>
+</tr>
+
+<tr>
+	<td class="lable">Email: </td>
+</tr>
+<tr>
+	<td colspan="2"><input type="text" id="email"/>
+	<div class="error" id="eemail"></div>
+	</td>
+</tr>
+
+<tr>
+	<td class="lable">Mobile: </td>
+</tr>
+<tr>
+	<td colspan="2"><input type="text" id="mobile"/>
+	<div class="error" id="emobile"></div>
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2" id="button"><center><input type="button" id="save" value="Save"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="update" value="Update"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="confirm" value="Confirm"/></center></td>
+	
+</tr>
+</table>
+
+</div>
+<div id="footer"><h3>OPENCART</h3></div>
+</center>
+</body>
+</html>

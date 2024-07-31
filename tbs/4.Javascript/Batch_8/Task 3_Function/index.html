@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			var fname = "ABC";
+			var lname = "XYZ";
+			var age = 10;
+			function myfun()
+			{
+				document.getElementById("mydiv").innerHTML = "<h1>Welcome <span style='color:red'>"+fname+"</span><span style='color:green'> "+lname+"</span></h1><p>Your age is :<span style='color:orange'>"+age+"</span></p>";
+				
+				document.getElementById("mydiv2").innerHTML = "Your age after 10 yr will be : "+(age+10);
+				
+				for(var z=0; z<age; z++)
+				{
+					/*if(z>4)
+					{
+						document.getElementById("myp").innerHTML += "Number "+ (z+1)+" = "+ z+"<br/>";	
+					}*/
+					if(z<5)
+					{
+						document.getElementById("myp").innerHTML += "Number "+ (z+6)+" = "+ z+"<br/>";	
+					}
+					
+				}
+				
+				
+				while(age < 30)
+				{
+					if(age%2==0)
+					{
+					document.getElementById("myp1").innerHTML += "Even No : "+age+" ";		
+					}
+					else
+					{
+					
+						document.getElementById("myp1").innerHTML += "Odd No : "+age+" ";	
+					}
+					 age++;
+				}
+				
+				
+			}
+		</script>
+	</head>
+	<body onload="return myfun();">
+		<div id="mydiv"></div>
+		<div id="mydiv2" style="color:red"></div>
+		<p id="myp" style="color:blue"></p>
+		<p id="myp1" style="color:#000000"></p>
+	</body>
+</html>

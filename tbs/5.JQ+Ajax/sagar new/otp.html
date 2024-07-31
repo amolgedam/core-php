@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTP</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script language="javascript" type="text/javascript">
+$("#save").submit(function(){
+			window.location='dashboard.html';
+});
+function randomString() {
+	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var string_length = 6;
+	var randomstring = '';
+	for (var i=0; i<string_length; i++) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum,rnum+1);
+	}
+	document.randform.randomfield.value = randomstring;
+};
+</script>
+
+</head>
+<body>
+<form name="randform">
+<div id="container">
+<!-- Header -->
+<header>
+<div class="header_left"><img src="images/opencart_logo.png" alt="logo" id="logo"></div>
+</header>
+<!-- Header -->
+<center>
+<table cellpadding="0px" cellspacing="0px" width="400px" height="300px"align="center" border="0px" id="form-table">
+<tr> 
+	<td colspan="2"><img src="images/opencart_logo.png" alt="cart" id="t-logo"/></td>
+</tr>
+
+<tr>
+	<center><td class="lable" colspan="2">OTP: </td></center>
+</tr>
+
+<tr>
+	<td colspan="2"><input type="text" name="randomfield" value="" id="sotp" readonly >
+	</td>
+</tr>
+
+<tr>
+	<td class="lable">Enter OTP: </td>
+</tr>
+<tr>
+	<td colspan="2"><input type="text" id="uotp"/>
+	</td>
+</tr>
+
+
+<tr>
+	<td colspan="2" id="button"><center><input type="button" value="Generate OTP" onClick="randomString();" id="gotp">&nbsp;&nbsp;&nbsp; <input type="button" id="save" value="Save"/></center></td>
+	
+</tr>
+</table>
+
+</div>
+<div id="footer"><h3>OPENCART</h3></div>
+</center>
+</form>
+</body>
+</html>

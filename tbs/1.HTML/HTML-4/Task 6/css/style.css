@@ -1,0 +1,48 @@
+body
+{
+	margin:0px;
+	font-family:Cambria;
+}
+#header
+{
+	background-image:url('../images/body_bg.jpg');
+	height:314px;	
+}
+#logo
+{
+	height:226px;
+	vertical-align:top;
+	text-align:right;
+	width:350px;
+	padding-top:88px;
+}
+#nav_top
+{
+	vertical-align:top;
+	text-align:left;
+	padding-top:30px;
+}
+.nav_top_bg
+{
+	background-image:url('../images/menu_bg.png');
+	height:27px;
+	text-align:center;
+	background-repeat:repeat-x;
+	font-size:12px;
+	color:#1588CD;
+}
+.borders
+{
+	border-right:1px solid #000000;
+}
+#leftpanel
+{
+	width:401px;
+	height:500px;
+	border-right:5px solid #8FCA24;
+}
+#footer
+{
+	background-image:url('../images/footer.jpg');
+	height:99px;
+}

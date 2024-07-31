@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Form Using HTML 5</title>
+</head>
+<body>
+<form method="post" action="#" enctype="multipart/form-data">
+				
+				<p>
+				<h3>New Types :</h3>
+					search | 
+					email |
+					url |
+					tel |
+					number |
+					range |
+					date |
+					month |
+					week |
+					time |
+					datetime |
+					color
+					<hr/>
+					<h3>New Attributes</h3>
+					placeholder |
+					autofocus |
+					autocomplete |
+					required |
+					pattern |
+					multiple 
+					<hr/>
+				</p>
+				
+				
+				
+				<p>
+					<label for="name">Full Name:</label>
+					<input type="text" name="name" required placeholder="Enter Your Name">
+				</p>
+				<p>
+					<label for="email">Email Address: </label>
+					<input type="email" name="email" placeholder="Enter Your Email">
+				</p>
+				<p>
+					<label for="website">Website: </label>
+					<input type="url" name="url" placeholder="Enter Your Website">
+				</p>
+				<p>
+					<label for="phone">Phone Number: </label>
+					<input type="tel"  placeholder="(555) 555-5555"
+         pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" />
+
+				</p>
+				<p>
+				<label>Product Number:
+<input pattern="[0-9][A-Z]{3}" name="product" type="text" title="Single digit followed by three uppercase letters."/>
+</label>
+				
+				</p>
+				
+				
+				
+				<fieldset name="about">
+				<legend>About Your Project</legend>
+				 <script type="text/javascript">
+    function updateTextInput(val) {
+      document.getElementById('textInput').value=val; 
+    }
+  </script>
+				<p>
+					<label for="budget">Budget: </label>
+					 <input type="range" name="rangeInput" min="0" max="10000" onChange="updateTextInput(this.value);">                                                       
+    <input type="text" id="textInput" value="">
+				</p>
+				<p>
+				<label for="budget">Browsers: </label>
+				 <input list="browsers">
+
+				<datalist id="browsers">
+				  <option value="Internet Explorer">
+				  <option value="Firefox">
+				  <option value="Chrome">
+				  <option value="Opera">
+				  <option value="Safari">
+				</datalist> 
+				</p>
+
+				<p>
+					<label for="start">Start Date: </label>
+					<input type="date" name="start" min="2012-01-01" max="2013-01-01" >
+				</p>
+				<p>
+					<label for="pages">Number of Pages: </label>
+					<input type="number" name="pages">
+				</p>
+				<p>
+					<label for="color">Main Color Of Site: </label>
+					<input type="color" name="color">
+				</p>
+				
+				</fieldset>
+				<p>
+					<input type="submit" value="Submit Inquiry">
+				</p>
+			</form>
+</body>
+</html>

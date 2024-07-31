@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Copy text</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="jquery.min.js"></script>
+	
+	</head>
+	<body>
+		<input type="text" name="text1" id="t1" onkeyup="getchanged();">
+		<input  type="text" name="text2" id="t2" readonly>
+		<button id="display">Display</button>
+		<input  type="text" name="text3" id="t3" readonly>
+		<script type="text/javascript">
+			function getchanged()
+			{
+				//alert("hi");//alert(text1);
+				t3.hide();				
+				document.getElementById("t2").value=document.getElementById("t1").value;		
+			}
+			function display()
+			{
+				t3.hide();
+				document.getElementById("t3").value=document.getElementById("t1").value;		
+			}
+		</script>
+	</body>
+</html>

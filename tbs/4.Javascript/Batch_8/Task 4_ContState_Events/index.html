@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			function myfun()
+			{
+				var i = 0;
+				while(i<20)
+				{
+					if(i%2==0)
+					{
+						document.getElementById("mydiv").innerHTML += i+" | ";
+					}
+					else
+					{
+						document.getElementById("mydiv1").innerHTML += i+" | ";
+					}					
+					i++;
+				}
+			}
+			function myfun1(a,b)
+			{
+				var d  = "<br/>Substraction of "+a +" - "+ b + " = "+ (a-b);
+				var e  = "<br/>Multi of "+a +" * "+ b + " = "+ (a*b);
+				var c = "Addition of "+ a +" + "+ b +" = " +(a+b) + d + e;
+				
+				document.getElementById("myp").innerHTML = c;
+			}
+			function myfun2(name,desig,age)
+			{
+				document.getElementById("myp1").innerHTML = "New " +"of "+ name+" Age is : "+age;
+			}
+			function myfun3()
+			{
+				var f1 = new Date();
+				var f = new Date().getDay();
+				var f2 = new Date().getMonth();
+				var f3 = new Date().getYear();
+			
+				alert(f);
+				alert(f1);
+				alert(f2);
+				alert(f3);
+				var x = "";
+				switch(f)
+				{
+					case 0:
+					x = "Today is Sun";
+					break;
+					
+					case 1:
+					x = "Today is Mon";
+					break;
+					
+					case 2:
+					x = "Today is Tue";
+					break;
+					
+					case 3:
+					x = "Today is Wed";
+					break;
+					
+					case 4:
+					x = "Today is Thue";
+					break;
+					
+					case 5:
+					x = "Today is Fri";
+					break;
+					
+					case 6:
+					x = "Today is Sat";
+					break;
+				}
+				document.getElementById("myp2").innerHTML = x;
+				
+			}
+			
+			function myfun4()
+			{
+				var fruits = ["Apple","Mango","Grapes"];
+				for(var r = 0; r < fruits.length;r++)
+				{
+					document.getElementById("myp3").innerHTML += fruits[r];
+				}
+				
+			}
+		</script>
+	</head>
+	<body onload="return myfun();">
+		<div id="mydiv">Even No :</div>
+		<div id="mydiv1">Odd No :</div>
+		<br/>
+		<button onclick="return myfun1(10,20);">Button 1</button>
+		<p id="myp"></p>
+		<br/>
+		<button onclick="return myfun2('ABC','Student');">Button 2</button>
+		<p id="myp1"></p>
+		
+		<button onclick="return myfun3();">Button 3</button>
+		<p id="myp2"></p>
+		
+		<button onclick="return myfun4();">Button 3</button>
+		<p id="myp3"></p>
+		
+	</body>
+</html>

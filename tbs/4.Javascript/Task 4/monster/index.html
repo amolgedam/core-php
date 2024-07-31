@@ -1,0 +1,242 @@
+<html>
+	<head>
+		<title> Monster Form</title>
+		<link href="css\style.css" type="text/css" rel="stylesheet"/>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="js\monster.js"></script>
+		
+	</head>
+	<body>
+		<form name="monster" method="post" action="save.html" onsubmit="return myform();" >
+		<table class="table1" cellpadding="0px" cellspacing="0px" align="center" border="0" width="800px"><!-- First Table -->
+			<tr >
+			<td class="lable1"><font>*</font> Required Fields</td>
+			</tr>
+			<tr>
+			<td>
+				<table class="table2" cellpadding="5px" cellspacing="0px" align="center" width="750px"><!-- Second Table -->
+				<tr>
+				<td class="lable2">Get Started With Monster</td>
+				<td class="lborder">&nbsp;</td>
+				</tr>
+				
+				 <tr>
+				<td class="lable3"><font>*</font>Email Address:</td>
+				<td class="lborder"><input class="text" type="email" name="email" placeholder="Enter Email Address"/><span id="eemail"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>First Name:</td>
+				<td class="lborder"><input class="text" type="text" name="firstname" placeholder="Enter First Name"/><span id="ename"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">Last Name:</td>
+				<td class="lborder"><input class="text"  type="text" name="lastname" placeholder="Enter Last Name"/><span id="elname"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>Desired Username:</td>
+				<td class="lborder"><input class="text" type="email" name="Username" placeholder="Enter User-name"/><span id="eusername"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>Choose a Password:</td>
+				<td class="lborder"><input class="text" type="password" name="password" placeholder="Enter Password"/><span id="epassword"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>Re-enter Password:</td>
+				<td class="lborder"><input class="text" type="password" name="repassword" placeholder="Re-enter Password"/><span id="erepassword"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable2 dot">Personal Detail</td>
+				<td class="lborder dot">&nbsp;</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>Current location:</td>
+				<td class="lborder">
+						<select class="sel1" name="city">
+							<option value=0>-- Select City --</option>
+							<option value=1>Nagpur</option>
+							<option value=2>Mumbai</option>
+							<option value=3>Pune</option>
+						</select><span id="ecity"></span>
+						</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">&nbsp;</td>
+				<td class="lborder"><input class="text" type="text" name="city detail"/></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">Mobile Number:</td>
+				<td class="lborder"><input class="text" type="text" name="mobno" placeholder="Enter Mobile Number"/><span id="emobile"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">Phone Number:</td>
+				<td class="lborder">
+				<input class="pno" type="text" name="mob_no" value="91"/>-
+				<input class="pno1" type="text" name="mob_no"/>-
+				<input class="pno2" type="text" name="mob_no"/><span id="ephone"></span>
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">Preferred Job location:</td>
+				<td class="lborder">
+						<select class="sel1" name="jobcity" size="4">
+							<option value=0>-- Select City --</option>
+							<option value=1>Anywhere</option>
+							<option value=2>Ahmedabad</option>
+							<option value=3>Bangalore</option>
+							<option value=4>Pune</option>
+						</select><span id="ejob"></span>
+				</td>
+				</tr>
+
+				<tr>
+				<td class="lable3"><font>*</font>Nationality:</td>
+				<td class="lborder">
+						<select class="sel1" name="nationality">
+							<option value=0>-- Select Nationality --</option>
+							<option value=1>Indain</option>
+							<option value=2>Other</option>
+						</select><span id="enationality"></span>
+						</td>
+				</tr>
+				
+				<tr>
+					<td class="lable3"><font>*</font>Gender:</td>
+					<td class="lborder">
+						<input type="radio" name="gender" value=1/>Male
+						<input type="radio" name="gender" value=2/ >Female<span id="egender"></span>
+					</td>
+				</tr>
+				
+				<tr>
+				<td class="lable2 dot">Professional Detail</td>
+				<td class="lborder dot">&nbsp;</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3"><font>*</font>Total Experience:</td>
+				<td class="lborder">
+						<select class="sel2" name="year">
+							<option value=0>-- Select --</option>
+							<option value=1>1</option>
+							<option value=2>2</option>
+							<option value=3>3</option>
+							<option value=4>4</option>
+							<option value=5>5</option>
+							<option value=6>6</option>
+							<option value=7>7</option>
+							<option value=8>8</option>
+							<option value=9>9</option>
+							<option value=10>10</option>
+						</select>  Year<span id="eyear"></span>
+						<select class="sel2" name="month">
+							<option value=0>-- Select --</option>
+							<option value=1>1</option>
+							<option value=2>2</option>
+							<option value=3>3</option>
+							<option value=4>4</option>
+							<option value=5>5</option>
+							<option value=6>6</option>
+							<option value=7>7</option>
+							<option value=8>8</option>
+							<option value=9>9</option>
+							<option value=10>10</option>
+							<option value=11>11</option>
+						</select>  Month<span id="emonth"></span>
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3 marg1"><font>*</font>Current / Preferred Industry:</td>
+				<td class="lborder">
+						<select class="sel1" name="Industry" size="8">
+							<option value=0>-- Select --</option>
+							<option value=1>Any</option>
+							<option value=2>Automotive</option>
+							<option value=3>Banking/ Financial Service</option>
+							<option value=4>Biotechnology & Life Science</option>
+							<option value=5>Chemical/Plastic/Rubber</option>
+							<option value=6>Construction</option>
+							<option value=7>Consumer goods/FMCG</option>
+							<option value=8>Auto-mobile</option>
+						</select><span id="eIndustry"></span>
+				</td>
+				</tr>
+
+				<tr>
+				<td class="lable3 marg"><font>*</font>Function:</td>
+				<td class="lborder">
+						<select class="sel1" name="Industry1" size="13">
+							<option value=0>-- Select --</option>
+							<option value=1>Admin</option>
+							<option value=2>Customer Services/ BPO / Call Center</option>
+							<option value=3>Finance and Accounts</option>
+							<option value=4>Human Resources</option>
+							<option value=5>IT</option>
+							<option value=6>Legal</option>
+							<option value=7>Marketing and communication</option>
+							<option value=8>purchases</option>
+							<option value=9>Sales</option>
+							<option value=10>Industry Specific Function</option>
+							<option value=11>Advertising</option>
+							<option value=12>Banking</option>
+							<option value=13>Insurance</option>
+						</select><span id="eIndustry1"></span>
+				</td>
+				</tr>
+				<tr>
+				<td class="lable3">Key skill:</td>
+				<td class="lborder"><input class="text" type="text" name="skill" /><span id="eskill"></span></td>
+				</tr>
+				
+				<tr>
+				<td class="lable2 dot">Email Subscription</td>
+				<td class="lborder dot">Emails you would like to receive</td>
+				</tr>
+				
+				<tr>
+				<td class="lable3">&nbsp;</td>
+				<td class="lborder"> <input type="checkbox" name="request" value="Monster products & newsletters"/ checked>Monster products & newsletters</td>
+				</tr>
+				<tr>
+				<td class="lable3">&nbsp;</td>
+				<td class="lborder"> <input type="checkbox" name="request" value="Offers & Promotions from leading Companies"/ checked>Offers & Promotions from leading Companies</td>
+				</tr>
+				<tr>
+				<td class="lable3">&nbsp;</td>
+				<td class="lborder"> <input type="checkbox" name="request" value="Receive Matching jobs through SMS"/ checked>Receive Matching jobs through SMS</td>
+				</tr>
+				
+				<tr>
+				<td class="table1 dot">&nbsp;</td>
+				<td class="lborder table1 dot"> <input class="butt" type="submit" name="submit" value="Sumbit"></td>
+			</tr>
+			
+			<tr>
+				<td class="table1">&nbsp;</td>
+				<td class="table1 lborder">&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td class="table1">&nbsp;</td>
+				<td class="table1">&nbsp;</td>
+			</tr>
+				
+			</table>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	</body>
+</html>

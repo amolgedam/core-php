@@ -1,0 +1,367 @@
+body
+{margin:0px;padding:0px;font-family: Lucida Sans Unicode;}
+#container
+{
+    width:100%;
+	height:auto;
+}
+header,article
+{
+	display:block;
+}
+header
+{
+    padding:0.7em;
+    background-color:#FFFF66;
+	height:82px;
+}
+img
+{
+    float:left;
+	width:90px;
+	height:80px;
+	text-align:right;
+	padding-left:10px;
+	padding-top:5px;
+}
+article
+{
+    height:600px;
+    width:100%;
+    background-image:url('../images/WD3.jpg');	
+} 
+#image{height:30px;width:30px;margin-left:548px;margin-top:60px;position:absolute;}
+
+#welcome
+{
+	padding-top:294px;
+	padding-right:35px;
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;}
+ #message
+{   
+   padding-right:20px;
+   font-size:24px;
+   font-weight:bold;
+   color:red;
+   text-align:center;
+   font-family:Arial Unicode MS;
+   padding-top:0px;
+  }
+ 
+footer
+{
+   background-color:#000000;
+   font-size:17px;
+   color:#ffffff;
+   height:70px;
+}
+
+@media all and (min-width:320px) and (max-width:640px)
+{
+header{padding:0em;background-color:#FFFF66;}
+img{float:left;width:71px;height:68px;text-align:right;padding-left:3px; padding-top:10px;}
+article{height:580px;width:100%;background-image:url('../images/WD3.jpg');	}
+#image{height:10px;width:10px;margin-left:62px;margin-top:43px;position:absolute;} 
+#welcome{padding-top:300px;padding-right:6px;font-size:15px;text-align:center;font-weight:bold;}
+#message{padding-right:10px;font-size:16px;font-weight:bold;color:red;text-align:center;font-family:Arial Unicode MS;padding-top:27px;}}
+
+/*------------code for register page-------------------------*/
+
+body
+{margin:0px;padding:0px;font-familY: Lucida Sans Unicode;}
+#container
+{
+    width:100%;
+	height:auto;
+}
+header,article
+{
+	display:block;
+}
+header
+{
+    padding:0.7em;
+    background-color:#FFFF66;
+	height:82px;
+}
+img
+{
+    float:left;
+	width:90px;
+	height:80px;
+	text-align:right;
+	padding-left:10px;
+	padding-top:5px;
+}
+article
+{
+    height:600px;
+    width:100%;
+    background-image:url('../images/WD3.jpg');	
+}
+#register
+{
+   font-size:27px;
+   font-weight:bold;
+   text-align:center;
+   color:#FF3300;
+   padding-top:12px;
+   margin-left:-136px;
+   background-color:black;
+   height:45px;
+   }
+   
+#changeregister
+{
+   font-size:27px;
+   font-weight:bold;
+   text-align:center;
+   color:#FF3300;
+   padding-top:12px;
+   margin-left:-136px;
+   background-color:black;
+   height:45px;
+   }
+.content
+{
+   font-size:21px;
+   color:yellow;
+   margin-top:30px;
+   margin-left:567px;font-weight:bold;
+   
+}   
+#name{
+width:259px;
+height:27px;
+margin-left:567px;
+margin-top:-6px;
+border:1px solid #ccc;
+}
+   
+#email{
+width:259px;
+height:27px;
+margin-left:567px;
+margin-top:-6px;
+border:1px solid #ccc;
+}
+#mobile{
+width:259px;
+height:27px;
+margin-left:567px;
+margin-top:-6px;
+border:1px solid #ccc;
+}
+
+#otp{
+width:259px;
+height:27px;
+margin-left:567px;
+margin-top:-6px;
+border:1px solid #ccc;
+}
+#OTP_NUM
+{
+   font-size:21px;
+   color:yellow;
+   margin-top:30px;
+   margin-left:567px;font-weight:bold;
+   
+}   
+.error
+{
+  height:20px;
+  width:258px;
+  background-color:red;
+  margin-left:488px;
+  color:#FFFFFF;
+}
+#save
+{
+    width:83px;
+	height:30px;
+	font-size:14px;
+	color:#003399;
+	border:1px solid #F0F0F0;
+	border-radius:1em 1em;
+	background-color:#ffff00;
+	margin-top:40px;
+	margin-left:571px;
+	font-familY: Lucida Sans Unicode;
+}
+#insert
+{
+    width:83px;
+	height:30px;
+	font-size:14px;
+	color:#003399;
+	border:1px solid #F0F0F0;
+	border-radius:1em 1em;
+	background-color:#ffff00;
+	margin-top:38px;
+	margin-left:566px;
+	font-familY: Lucida Sans Unicode;
+}
+#change
+{
+    width:79px;
+	height:30px;
+	font-size:14px;
+	color:#003399;
+	border:1px solid #F0F0F0;
+	border-radius:1em 1em;
+	background-color:#ffff00;
+	margin-top:48px;
+	margin-left:13px;
+	font-familY: Lucida Sans Unicode;
+}
+footer
+{
+   background-color:#000000;
+   font-size:15px;
+   color:#ffffff;
+   height:70px;
+}
+.lcontent
+{
+width:259px;
+height:27px;
+margin-left:488px;
+margin-top:-6px;
+border:1px solid #ccc;
+}
+@media all and (min-width:320px) and (max-width:640px)
+{
+header{padding:0em;background-color:#FFFF66;}
+img{float:left;width:71px;height:68px;text-align:right;padding-left:10px; padding-top:8px;}
+article{height:580px;width:100%;background-image:url('../images/WD3.jpg');	}
+#register{font-size:23px;font-weight:bold;text-align:center;color:red;padding-top:12px;margin-left:-50px; background-color:black;
+   height:39px;} 
+#name{width:187px;height:23px;margin-left:76px;margin-top:0px;border:1px solid #ccc;}
+#email{width:187px;height:23px;margin-left:76px;margin-top:0px;border:1px solid #ccc;}
+#mobile{width:187px;height:23px;margin-left:76px;margin-top:0px;border:1px solid #ccc;}
+#otp{width:187px;height:23px;margin-left:76px;margin-top:0px;border:1px solid #ccc;}
+#OTP_NUM{font-size:20px;color:yellow;margin-top:32px;margin-left:75px;font-weight:bold;} 
+.error{height:20px;width:186px;background-color:red;margin-top:0px;margin-left:77px;background-color:red;}
+#save{  width:64px;height:24px;font-size:14px;color:#003399;border:1px solid #F0F0F0;border-radius:1em 1em;background-color:#ffff00;margin-top:40px;margin-left:70px;}
+footer{background-color:#000000;font-size:15px;color:#ffffff;height:70px;}
+.lcontent{width:187px;height:23px;margin-left:76px;margin-top:0px;border:1px solid #ccc;}
+#change{width:66px;height:23px;font-size:14px;color:#003399;border:1px solid #F0F0F0;border-radius:1em 1em;background-color:#ffff00;margin-top:20px;margin-left:13px;font-familY: Lucida Sans Unicode;}
+#insert{width:82px;height:24px;font-size:14px;color:#003399;border:1px solid #F0F0F0;border-radius:1em 1em;background-color:#ffff00;margin-top:30px;margin-left:65px;}
+#changeregister{font-size:23px;font-weight:bold;text-align:center;color:#FF3300;padding-top:12px;margin-left:-6px;background-color:black;height:39px;}   
+.content{font-size:20px;color:yellow;margin-top:32px;margin-left:75px;}  
+}
+
+/*-------------------Code for OTP generation--------------*/
+
+body
+{margin:0px;padding:0px;font-familY: Lucida Sans Unicode;}
+#container
+{
+    width:100%;
+	height:auto;
+}
+header,article
+{
+	display:block;
+}
+header
+{
+    padding:0.7em;
+    background-color:#FFFF66;
+	height:82px;
+}
+img
+{
+    float:left;
+	width:90px;
+	height:80px;
+	text-align:right;
+	padding-left:10px;
+	padding-top:5px;
+}
+article
+{
+    height:600px;
+    width:100%;
+    background-image:url('../images/WD3.jpg');	
+}
+#otp_header
+{
+   font-size:27px;
+   font-weight:bold;
+   text-align:center;
+   color:#FF3300;
+   padding-top:12px;
+   margin-left:-136px;
+   background-color:black;
+   height:45px;
+}
+#otp_confirm
+{
+   font-size:23px;
+   color:yellow;
+   padding-top:50px;
+   margin-left:536px;
+}
+#textbox1
+{
+  height:30px;
+  width:200px;
+  margin-left:451px;
+  margin-top:11px;
+  border:1px solid #ccc;
+  
+}
+#otp_text{
+  font-size:23px;
+  color:yellow;
+  margin-left:536px;
+  margin-top:20px;
+}
+ 
+#textbox2
+{
+  height:30px;
+  width:200px;
+  margin-left:536px;
+  margin-top:11px;
+  border:1px solid #ccc;
+} 
+#confirmation
+{
+    width:83px;
+	height:27px;
+	font-size:14px;
+	color:#003399;
+	border:1px solid #F0F0F0;
+	border-radius:1em 1em;
+	background-color:#ffff00;
+	margin-top:40px;
+	margin-left:537px;
+	font-familY: Lucida Sans Unicode;}
+	 
+footer
+{
+   background-color:#000000;
+   font-size:17px;
+   color:#ffffff;
+   height:70px;
+}
+
+@media all and (min-width:320px) and (max-width:640px)
+{
+header{padding:0em;background-color:#FFFF66;}
+img{float:left;width:71px;height:68px;text-align:right;padding-left:10px; padding-top:8px;}
+article{height:580px;width:100%;background-image:url('../images/WD3.jpg');	}
+#otp_header{font-size:23px;font-weight:bold;text-align:center;color:red;padding-top:12px;margin-left:0px; background-color:black;
+   height:39px;} 
+#otp_confirm{font-size:19px; color:yellow;padding-top:65px;margin-left:65px;}
+#textbox1{height:28px;width:129px;margin-left:34px;margin-top:7px;border:1px solid #ccc;}
+#otp_text{ font-size:19px; color:yellow;margin-left:65px;margin-top:20px;}
+#textbox2{height:28px;width:129px;margin-left:65px; margin-top:7px; border:1px solid #ccc; }
+#confirmation{ width:76px;height:23px;font-size:14px;color:#003399;border:1px solid #F0F0F0;border-radius:1em 1em;background-color:#ffff00;margin-top:40px;margin-left:65px;font-familY: Lucida Sans Unicode;}
+footer{background-color:#000000;font-size:15px;color:#ffffff;height:70px;}
+}

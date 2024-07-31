@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Employee details</title>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$("document").ready(function(){
+				$("#s").keyup(function(){
+					var sb = $("#sb").val();
+					var s = $("#s").val();
+					
+					$("#loaddata").load("contact.php?sb="+sb+"&s="+s);
+				});
+				$("#loaddata").load("contact.php");
+				
+			});
+		</script>
+			<link href="css/style1.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+	    <div id="container">
+		    <header>
+			<img src="images/logo.jpg" alt=""/>
+		    </header>
+			<article>
+			<div>
+		<table cellpadding="16px" cellspacing="0px" width="90%" align="center" border="0px" class="table">
+			<tr>
+				<td id="search">Search By :
+				<select id="sb">
+					<option>--Select--</option>
+					<option value="name">Name</option>
+				</select>
+				</td>
+				<td><input type="text" id="s"/></td>
+			</tr>
+		</table>
+		</div>
+		<div id="loaddata"></div>
+	</body>
+</html>	

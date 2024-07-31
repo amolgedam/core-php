@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#myplace 
+{
+	width:225px;
+	height:225px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text/html", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text/html");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag and Drop</p>
+
+<table>
+<tr>
+	<td id="myplace" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+	<td><img id="drag1" src="html5.jpg" draggable="true" ondragstart="drag(event)" width="225" height="225">
+</td>
+</tr>
+</table>
+
+</body>
+</html>

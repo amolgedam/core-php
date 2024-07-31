@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Form</title>
+		<script>
+			function validate()
+			{
+				if(document.myform.name.value=="")
+				{
+					document.getElementById("ename").innerHTML = "<div class='error'>Please Enter Name</div>";
+					document.myform.name.focus();
+					return false;
+				}
+				if(document.myform.address.value=="")
+				{
+					document.getElementById("eaddress").innerHTML = "<div class='error'>Please Enter Address</div>";
+					document.myform.address.focus();
+					return false;
+				}
+				if(document.myform.city.value==0)
+				{
+					document.getElementById("ecity").innerHTML = "<div class='error'>Please Select City</div>";
+					return false;
+				}
+			}
+		</script>
+		<style>
+			.error
+			{
+				background-color:red;
+				color:#fff;
+				padding:3px;
+			}
+		</style>
+	</head>
+	<body>
+	<form name="myform" method="post" action="save.html" onsubmit="return validate();">
+		<table cellpadding="10px" cellspacing="0px" width="300px" border="1" align="center">
+			<tr>
+				<td>
+					<label>Name :</label>
+				</td>
+				<td>
+					<input type="text" name="name"/>
+					<div id="ename"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Address :</label>
+				</td>
+				<td>
+					<textarea rows="5" col="30" name="address"></textarea>
+					<div id="eaddress"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>City :</label>
+				</td>
+				<td>
+					<select name="city">
+						<option value="0">--Select City--</option>
+						<option value="1">Nagpur</option>
+						<option value="2">Mumbai</option>
+						<option value="3">Pune</option>
+					</select>
+					<div id="ecity"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Gender :</label>
+				</td>
+				<td>
+					<input type="radio" name="gender" value="male"/> Male
+					<input type="radio" name="gender" value="female"/> Female
+				</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+				<td>
+					<input type="submit" value="Save" />
+					
+				</td>
+			</tr>
+		</table>
+	</form>	
+	</body>
+</html>

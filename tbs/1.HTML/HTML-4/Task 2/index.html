@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<form method="post" action="show.html" enctype="multipart/form-data">
+		<table cellpadding="10px" cellspacing="0px" width="400px" align="center" border="1">
+			<tr>
+				<td>
+					<label>Name : </label>
+				</td>
+				<td>
+					<input type="text" name="name"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Address : </label>
+				</td>
+				<td>
+					<textarea name="address" rows="5" col="30"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Password : </label>
+				</td>
+				<td>
+					<input type="password" name="password"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Gender : </label>
+				</td>
+				<td>
+					<input checked type="radio" name="gender" value="male"/>Male
+					<input type="radio" name="gender" value="female"/>Female
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Hobbies : </label>
+				</td>
+				<td>
+					<input type="checkbox" name="hobbies" value="singing"/>Singing
+					<input checked type="checkbox" name="hobbies" value="reading"/>Reading
+				</td>
+			</tr>
+				<tr>
+				<td>
+					<label>City : </label>
+				</td>
+				<td>
+					<select name="city">
+						<option>--Select City--</option>
+						<optgroup label="MH">
+							<option selected="true">Nagpur</option>
+							<option>Pune</option>
+							<option>Mumbai</option>
+						</optgroup>
+						<optgroup label="MH">
+							<option>Nagpur</option>
+							<option>Pune</option>
+							<option>Mumbai</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Language : </label>
+				</td>
+				<td>
+					<select name="lang" size="3" multiple="true">
+						<option>Select Lang</option>
+						<option>Marathi</option>
+						<option>Hindi</option>
+						<option>English</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Avatar : </label>
+				</td>
+				<td>
+					<input type="file" name="avatar"/>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp; &amp; &copy; &lt; &gt;</td>
+				<td>
+					<input type="button" name="simple"/>
+					<input type="submit" name="submit"/>
+					<input type="reset" name="reset"/>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>

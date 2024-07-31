@@ -1,0 +1,140 @@
+body
+{
+	margin:0px;
+}
+#header
+{
+	background-image:url('../images/body_bg.jpg');
+	height:314px;
+}
+#logo
+{
+	height:314px;
+	width:390px;
+	vertical-align:top;
+	text-align:center;
+	padding-top:100px;
+}
+#top_nav
+{
+	vertical-align:top;
+	padding-top:10px;
+}
+.top_nav_bg
+{
+	background-image:url('../images/menu_bg.png');
+	text-align:center;
+	color:#156CCF;
+}
+#content_left
+{
+	vertical-align:top;
+	border-right:#8FCA24 5px solid;
+	width:401px;
+	text-align:center;
+}
+#content_left ul
+{
+	width:200px;
+	margin-left:100px;
+}
+#content_left ul li 
+{
+	background-image:url('../images/slide-right.png');
+	width:148px;
+	height:30px;
+	list-style-type:none;
+	margin-bottom:2px;
+}
+#content_left ul li a
+{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+.image
+{
+     background-image:url('../images/testimonial_bg.png');
+	 padding-top:10px;
+	 margin-bottom:30px;
+}
+
+.left_headings
+{
+	text-align:center;
+	padding-bottom:6px;
+	color:#154FC0;
+	text-transform:uppercase;
+	font-weight:normal;
+	height:30px;
+	font-size:20px;
+}
+#content_left p
+{
+	text-align:justify;
+	margin:0px 15px;
+	color:#597474;
+	
+	
+}
+.heading
+{
+    font-size:25px;
+    font-style:bold;
+	color:#90CB25;
+	font-family:cambria;
+	vertical-align:top;
+	padding:5px 5px 5px 5px;
+}
+#footer
+{
+	background-image:url('../images/footer.jpg');
+	height:99px;
+}
+.bottom_nav
+{
+     padding:0px 0px 0px 5px;
+	 vertical-align:bottom;
+	 padding-bottom:0px;
+     text-align:right;
+     font-family:cambria;	 
+}
+#bottom
+{
+     width:400px;
+	 color:white;
+	 vertical-align:bottom;
+	 padding-bottom:0px;
+	 text-align:center-left;
+}
+span
+{
+     color:red;
+}
+.pic
+{
+     padding:5px 5px 5px 5px;
+}
+.lorem
+{
+     color:#90CB25;
+     text-align:center;	 
+}
+#but
+{
+     background-image:url('../images/button.png');
+	 width:92px;
+	 height:27px;
+}
+.box
+{
+     color:#597474;
+}
+#current
+{
+     paddind:5px 5px 5px 5px;
+}
+#home
+{
+     background-image:url('../images/services_box.png');
+}

@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Popups</title>
+		<script type="text/javascript">
+			function myalert()
+			{
+				alert("Good Morning!\n How are you Today?");	// it is used for msg and alert to user//
+			}
+			function myconfirm()
+			{
+				var rslt = confirm("Click any Button");
+				if(rslt==true)
+				{
+					document.getElementById("m1").innerHTML= "User Press OK!";
+				}
+				else
+				{
+					document.getElementById("m1").innerHTML= "User Press CANCEL!";
+				}
+			}
+			function myprompt()
+			{
+				var b = prompt("Enter Your Name","");
+				if(b=="")
+				{
+					document.getElementById("m2").innerHTML= "Please Enter Name";
+				}	
+				else if(b==null)
+				{
+					document.getElementById("m2").innerHTML= "User Press Cancel" ;
+				}
+				else
+				{
+					document.getElementById("m2").innerHTML= "Welcome "+b ;
+				}
+				
+			}
+			
+			function myfor()
+			{
+				var g=0;
+				for(var i=0; i<10; i++)
+				{
+					g++;
+					document.getElementById("m3").innerHTML += "<br/>Number "+g+" = "+i;
+				}
+				
+				
+			}
+			
+			
+		</script>
+		
+	</head>
+	<body>
+		<button onclick="return myalert();">Alert Box</button>
+		<br/><br/>
+		<button onclick="return myconfirm();">Confirm Box</button>
+		<span id="m1"></span>
+		<br/><br/>
+		<button onclick="return myprompt();">Prompt Box</button>
+		<span id="m2"></span>
+		<br/><br/>
+		<button onclick="return myfor();">For Loop</button>
+		<div id="m3"></div>
+	</body>
+</html>

@@ -1,0 +1,572 @@
+body
+{
+	margin:0px;
+	background-color:#E5E5E5;
+	font-family:arial;
+}
+#header
+{
+	padding-top:1px;
+	height:75px;
+	background-color:#006666;
+	color:#ffffff;
+}
+#container
+{
+	margin:auto;
+	margin-top:140px;
+	width:600px;
+	height:335px;
+	background-color:#ffffff;
+}
+#title
+{
+	height:50px;
+	background-color:#006666;
+	color:#ffffff;
+	padding-top:1px;	
+}
+#title h2
+{
+	margin: 9px 0px 3px 26px;
+}
+#message
+{
+	margin:auto;
+	margin-top:20px;
+	width:500px;
+	height:33px;
+	background-color:#EEEEEE;
+	text-align:center;
+	color:#318031;
+	padding-top:10px;
+	font-weight:600;
+}
+.label
+{
+	float:left;
+	width:110px;
+	font-weight:bold;
+	text-align:right;
+	margin-top:10px;
+	margin-left:75px;
+}
+.controls
+{
+	margin-top:10px;
+	margin-left:190px;
+}
+.controls input
+{
+	margin-left: 15px;
+    width: 343px;
+}
+#button
+{
+	margin:auto;
+	margin-top:20px;
+	width:500px;
+	height:57px;
+	background-color:#F1F8F8;
+	text-align:center;
+	color:#318031;
+	padding-top:10px;	
+}
+button
+{
+	background-image:url('../images/icons/key.png');
+	background-repeat:no-repeat;
+	background-position:5px;
+	text-align:center;
+	height: 37px;
+    width: 91px;
+	margin-right:13px;
+	margin-left:70px;
+	font-weight:bold;
+}
+a
+{
+	text-decoration:none;
+	color:#A94E1F;
+	margin-left:13px;
+}
+p
+{
+	text-align:center;
+}
+/*----------- 2nd frame start --------------*/
+.label_2
+{
+	float:left;
+	width:110px;
+	font-weight:bold;
+	text-align:left;
+	margin-top:10px;
+	margin-left:35px;
+}
+.controls_2
+{
+	margin-top:10px;
+	margin-left:190px;
+}
+.controls_2 input
+{
+	margin-left:0px;
+    width: 370px;
+}
+.exp
+{
+	font-size:14px;
+	color:#AAC0D6;
+}
+.exp p
+{
+	width:370px;
+	background-color:#FF0000;
+	color:#ffffff;
+	margin:0px;
+}
+#button_2
+{
+	margin:5px auto;
+	margin-top:12px;
+	width:530px;
+	height:47px;
+	background-color:#F1F8F8;
+	color:#318031;
+	padding-top:10px;
+	margin-left:30px;
+}
+#button_2 button
+{
+	background-image:url('../images/icons/tick.png');
+	width:100px;
+	background-repeat:no-repeat;
+	text-align:center;
+	margin:0px;
+	margin-left:15px;
+}
+/*----------- 2nd frame end --------------*/
+/*----------- 3rd frame start --------------*/
+#container_3
+{
+	margin:auto;
+	margin-top:140px;
+	width:600px;
+	height:180px;
+	background-color:#ffffff;
+}
+#msg_3
+{
+	margin:30px;
+}
+#button_3 button
+{
+	background-image:url('../images/icons/tick.png');
+	width:170px;
+	text-align:center;
+	margin:30px;
+	margin-top:-10px;
+}
+/*----------- 3rd frame start --------------*/
+
+/*----------- 4th frame start --------------*/
+#container_4
+{
+	margin:auto;
+	margin-top:140px;
+	width:600px;
+	height:210px;
+	background-color:#ffffff;
+}
+/*----------- 4th frame end --------------*/
+
+/*----------- 5th frame start --------------*/
+#top_width
+{
+	margin:0px;
+	float:left;
+	width:1300px;
+}
+#header_5_left
+{
+	float:left;
+	padding-top:1px;
+	height:105px;
+	width:945px;
+	background-color:#006666;
+	color:#ffffff;
+}
+#header_5_left h1
+{
+	margin-left:35px;
+}
+#header_5_left ul li
+{
+	display:inline;
+}
+#header_5_left ul li a
+{
+	margin:0px;
+	background-color:#008C8C;
+	color:#ffffff;
+	padding:5px;
+	margin-top:-5px;
+}
+#header_5_left ul li a:hover
+{
+	background-color:#F0F0EE;
+	color:#000000;
+}
+#active
+{
+	background-color:#F0F0EE;
+	color:#000000;
+}
+#header_5_right
+{
+	float:left;
+	padding-top:1px;
+	height:105px;
+	width:345px;
+	background-color:#006666;
+	color:#ffffff;
+}
+#heading-right
+{
+	text-align:right;
+	margin:0px;
+}
+#heading-right ul li
+{
+	display:inline;
+}
+#heading-right ul li a
+{
+	font-size:12px;
+	color:#ffffff;
+	margin-right:25px;
+}
+#notice
+{
+	float:left;
+	width:900px;
+	height:30px;
+	margin:12px;
+	background-color:#EEEEEE;
+	color:#008000;
+	padding:5px;
+	text-align:center;
+}
+#table_content
+{
+	float:left;
+	width:910px;
+	height:380px;
+	margin-top:-7px;
+	border-top: 6px solid #008C8C;
+	background-color:#FFFFFF;
+	margin-left:13px;
+}
+#table_content h3
+{
+	margin-left:6px;
+	margin:0px;
+	padding-left:10px;
+	background-color:#E6FAFA;
+	height:27px;
+}
+#button_5 button
+{
+	background-image:url('../images/icons/tick.png');
+	background-repeat:no-repeat;
+	background-position:5px;
+	text-align:right;
+	margin-left:750px;
+	margin-top:10px;
+	height: 37px;
+    width:150px;
+	font-weight:bold;
+}
+.table_head
+{
+	width:140px;
+	text-align:left;
+	padding-left:20px;
+	background-color:#006666;
+	color:#ffffff;
+}
+.table_head_blank
+{
+	width:295px;
+	text-align:left;
+	padding-left:20px;
+	background-color:#006666;
+	color:#ffffff;
+	padding:10px;
+}
+.table_content
+{
+	padding-left:20px;
+	padding:4px;
+}
+.table_content ul li
+{
+	display:inline;
+	margin-left:10px;
+}
+.table_content a
+{
+	color:#7A1818;
+}
+.bottom_line
+{
+	border-bottom:2px solid #EEEEEE;
+}
+.right_line
+{
+	padding-right:5px;
+	border-right:2px solid #7A1818;
+}
+#button_5_delete button
+{
+	float:left;
+	background-image:url('../images/icons/cross.png');
+	background-repeat:no-repeat;
+	background-position:5px;
+	text-align:right;
+	margin-left:20px;
+	margin-top:10px;
+	height:37px;
+    width:90px;
+	font-weight:bold;
+}
+#page_number
+{
+	float:right;
+	margin:0px;
+}
+#page_number ul li
+{
+	display:inline;
+}
+#page_number a
+{
+	color:#DDDDDD;
+	font-size:12px;
+	font-weight:bold;
+	margin:0px;
+	padding:5px;
+	border:1px solid #DDDDDD;
+	margin-right:10px;
+}
+#page_number ul li a:hover
+{
+	color:#000000;
+	border:1px solid #000000;
+}
+.button_active
+{
+	color:#000000;
+	border:1px solid #000000;
+}
+#footer
+{
+	float:left;
+	width:900px;
+	height:50px;
+	margin:0px;
+	margin-top:45px;
+	background-color:#FFFFFF;
+	color:#B8B8D3;
+	padding:5px;
+	text-align:left;
+	font-size:12px;
+}
+#right_notic
+{
+	float:right;
+	width:324px;
+	height:260px;
+	background-color:#FFFFCC;
+	margin:0px;
+	margin-right:-355px;
+	margin-top:-395px;
+	text-align:left;
+	padding:10px;
+	text-align:justify;
+}
+#right_notic p
+{
+	text-align:left;
+	margin:15px;
+	text-align:justify;
+}
+/*----------- 5th frame end --------------*/
+/*----------- 6th frame start --------------*/
+#record_content
+{
+	float:left;
+	width:910px;
+	height:780px;
+	margin-top:15px;
+	border-top: 6px solid #008C8C;
+	background-color:#FFFFFF;
+	margin-left:13px;
+}
+#record_content h3
+{
+	margin-left:6px;
+	margin:0px;
+	padding-left:10px;
+	background-color:#E6FAFA;
+	height:27px;
+}
+.label_6
+{
+	float:left;
+	width:120px;
+	font-weight:bold;
+	text-align:left;
+	margin-top:13px;
+	margin-left:30px;
+}
+.label_6 span
+{
+	color:#FF0000;
+}
+.controls_6
+{
+	float:left;
+	margin-top:0px;
+	margin-left:-15px;
+}
+.controls_6 input
+{
+	margin-left:0px;
+    width:850px;
+}
+.exp_6
+{
+	margin-left:-121px;
+	font-size:14px;
+	color:#AAC0D6;
+}
+.exp_6 p
+{
+	width:850px;
+	text-align:left;
+	background-color:#FF0000;
+	color:#ffffff;
+	margin:0px;
+}
+#textarea_6
+{
+	float:left;
+	margin-top:-33px;
+	margin-left:36px;
+	width:800px;
+}
+.controls_gender
+{
+	float:left;
+	margin-top:30px;
+	margin-left:-110px;
+}
+.controls_gender input
+{
+	margin-left:400px;
+}
+.label_avatar
+{
+	float:left;
+	width:120px;
+	font-weight:bold;
+	text-align:left;
+	margin-top:100px;
+	margin-left:-477px;
+}
+#controls_avatar
+{
+	float:left;
+	margin-top:125px;
+	margin-left:-477px;
+	width:860px;
+	height:25px;
+	border:1px solid #000000;
+}
+.label_hobbies
+{
+	float:left;
+	width:100px;
+	font-weight:bold;
+	text-align:left;
+	margin-top:173px;
+	margin-left:-865px;
+}
+.controls_hobbies
+{
+	float:left;
+	margin-top:194px;
+	width:485px;
+	text-align:left;
+	margin-left:-865px;
+}
+.controls_hobbies input
+{
+	margin-left:470px;
+}
+#button_6
+{
+	float:left;
+	width:875px;
+	height:55px;
+	margin:130px;
+	margin-left:15px;
+	background-color:#F1F8F8;
+	
+	
+}
+#button_6 button
+{
+	background-image:url('../images/icons/tick.png');
+	width:100px;
+	background-repeat:no-repeat;
+	text-align:center;
+	margin:0px;
+	margin-top:10px;
+	margin-left:12px;
+}
+#footer_6
+{
+	float:left;
+	width:900px;
+	height:50px;
+	margin:15px;
+	margin-top:25px;
+	background-color:#FFFFFF;
+	color:#B8B8D3;
+	padding:5px;
+	text-align:left;
+	font-size:12px;
+}
+#right_notic_6
+{
+	float:right;
+	width:324px;
+	height:260px;
+	background-color:#FFFFCC;
+	margin:0px;
+	margin-right:3px;
+	margin-top:-784px;
+	text-align:left;
+	padding:10px;
+	text-align:justify;
+}
+#right_notic_6 p
+{
+	text-align:left;
+	margin:15px;
+	text-align:justify;
+}
+/*----------- 6th frame end --------------*/

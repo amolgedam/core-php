@@ -1,0 +1,94 @@
+/*-------------------------Code for Contact page------------------*/
+
+body
+{margin:0px;padding:0px;font-familY: Lucida Sans Unicode;}
+#container
+{
+    width:100%;
+	height:auto;
+}
+header,article
+{
+	display:block;
+}
+header
+{
+    padding:0.7em;
+    background-color:#FFFF66;
+	height:82px;
+}
+img
+{
+    float:left;
+	width:90px;
+	height:80px;
+	text-align:right;
+	padding-left:10px;
+	padding-top:5px;
+}
+article
+{
+    height:auto;
+    width:100%;
+    background-image:url('../images/WD3.jpg');	
+}
+
+footer
+{
+   background-color:#000000;
+   font-size:15px;
+   color:#ffffff;
+   height:70px;
+}
+.table
+{
+  width:100%;
+  height:auto;}
+#search_textbox
+{
+margin-left:30px;
+
+padding-top:5px;
+} 
+#search{
+margin-left:29px;
+font-size:16px;
+color:yellow;
+padding-top:5px;
+}
+#s
+{
+   margin-right:1038px;
+   width:153px;
+   padding-top:5px;
+}
+@media all and (min-width:320px) and (max-width:640px)
+{
+header{padding:0em;background-color:#FFFF66;}
+img{float:left;width:71px;height:68px;text-align:right;padding-left:10px; padding-top:8px;}
+article{height:auto;width:100%;background-image:url('../images/WD3.jpg');	}
+footer{background-color:#000000;font-size:15px;color:#ffffff;height:70px;}
+.table
+{
+  width:100%;
+  height:auto;}
+#search_textbox
+{
+margin-left:30px;
+
+padding-top:5px;
+} 
+#search{
+margin-left:29px;
+font-size:16px;
+color:yellow;
+padding-top:5px;
+}
+#s
+{
+   margin-right:1038px;
+   width:153px;
+   padding-top:5px;
+}
+
+}

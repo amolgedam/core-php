@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQ-AJAX</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Online Google Snippet 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	-->
+			
+		<!-- Offline Library -->
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$("document").ready(function(){
+				$("#loaddata").load("show.php");
+				$("#name").hide();
+			});
+		</script>
+	</head>
+	<body>
+		<center>
+		<h1>Display Details</h1>
+		<div id="loaddata"></div>
+		</center>
+	</body>
+</html>	

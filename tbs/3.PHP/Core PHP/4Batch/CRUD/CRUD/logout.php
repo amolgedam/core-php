@@ -1,0 +1,13 @@
+<?php 
+require_once("includes/config.php");
+if(!isset($_SESSION['auth']['id']))
+{
+	header("location:index.php");
+}
+else
+{
+	unset($_SESSION['auth']);
+	session_destroy();
+	header("location:index.php");
+}
+?>

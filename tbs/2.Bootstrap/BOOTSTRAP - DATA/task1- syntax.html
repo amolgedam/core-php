@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins as needed -->
+      <script src="js/bootstrap.min.js"></script>
+   </head>
+   <body>
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<div class="row">
+			<p>Before Ordering</p>
+			<div class="col-md-4" style="background-color: #dedef8;">
+				I am on left
+			</div>
+			<div class="col-md-8" style="background-color: #dedef8;">
+				I am on right
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<p>After Ordering</p>
+			<div class="col-md-4 col-md-push-8" style="background-color: #dedef8;">
+				I was on left
+			</div>
+			<div class="col-md-8 col-md-pull-4" style="background-color: #dedef8;">
+				I was on right
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+

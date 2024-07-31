@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Js</title>
+		<script>
+			function myfunction(name,desig,sal)
+			{
+				var msg = "<b>Welcome "+name+"</b>,<br/>Your Designation = <b>"+desig+"</b><br/>Your Salary =";
+				document.getElementById("mdiv").innerHTML = msg;
+			}
+			function copypaste()
+			{
+				document.getElementById("t2").value = document.getElementById("t1").value;
+				
+			}
+			function Todaysday()
+			{
+				var d = new Date().getDay();
+				var d1 = new Date().getMonth();
+				var d2 = new Date().getYear();
+				var d3 = new Date().getDate();
+				var d4 = new Date()
+				alert(d3);
+				
+				switch(d)
+				{
+					case 0:
+					var x = "Today is Sunday! Enjoy...";
+					break;
+					case 1:
+					var x = "Today is Monday!";
+					break;
+					case 2:
+					var x = "Today is Tue!";
+					break;
+					case 3:
+					var x = "Today is Wed!";
+					break;
+					case 4:
+					var x = "Today is Thur!";
+					break;
+					case 5:
+					var x = "Today is Fri!";
+					break;
+					case 6:
+					var x = "Today is Sat!";
+					break;
+					
+					
+				}	
+				document.getElementById("m1div").innerHTML = d4;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="return myfunction('Sam','Manager','20000')">My Function</button>
+		<div id="mdiv"></div>
+		<br/><br/>
+		<input type="text" id="t1" />
+		<input type="text" id="t2" readonly/>
+		<input type="button" value="Copy paste" onclick="return copypaste();"/>		
+		<br/><br/>
+		<input type="text" id="t3" onkeyup="document.getElementById('t4').value = document.getElementById('t3').value;"/>
+		<input type="text" id="t4" readonly/>
+		<br/></br/>
+		<button type="button" onclick="return Todaysday()">Day</button>
+		<div id="m1div"></div>
+	</body>
+</html>

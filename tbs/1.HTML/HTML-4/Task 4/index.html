@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>Layout</title>
+		<style>
+			body
+			{
+				margin:0px;
+			}
+			#myheader
+			{
+				background-color:red;
+				height:100px;
+				color:#ffffff;
+				text-align:center;
+				text-transform:uppercase;
+			}
+			#nav
+			{
+				background-color:green;
+				height:45px;
+				padding-top:13px;
+			}
+			ul li 
+			{
+				list-style-type:none;
+				display:inline;
+			}
+			ul li a
+			{
+				color:#ffffff;
+				text-decoration:none;
+				padding:0px 10px;
+			}
+			ul li a:hover
+			{
+				background-color:yellow;
+				color:#000000;
+				padding:10px;
+				border-radius:10px;
+			}
+			#active
+			{
+				background-color:yellow;
+				color:#000000;
+				padding:10px;
+				border-radius:10px;
+			}
+			.panels
+			{
+				background-color:yellow;
+				height:500px;
+				width:200px;
+				vertical-align:top;
+			}
+			#content
+			{
+				vertical-align:top;
+			}
+			p
+			{
+				margin:0px 10px;
+				text-align:justify;
+			}
+			img 
+			{
+				width:150px;
+				height:150px;
+				border:2px solid #cc0000;
+				padding:3px;
+				border-radius:10px;
+			}
+			#footer
+			{
+				background-color:black;
+				height:30px;
+				color:#ffffff;
+				text-align:center;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<table cellpadding="0px" cellspacing="0px" width="1000px" align="center" border="0">
+			<!-- Header -->
+			<tr>
+				<td colspan="3" id="myheader">
+					<h1>Welcome to My Website</h1>
+				</td>
+			</tr>
+			<!-- Header -->
+			<!-- nav -->
+			<tr>
+				<td colspan="3" id="nav">
+					<ul>
+						<li><a href="#" id="active">Home</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Home</a></li>
+					</ul>
+				</td>
+			</tr>
+			<!-- nav -->
+			<!-- content -->
+			<tr>
+				<td class="panels">
+					<p>This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. </p>
+				</td>
+				<td id="content">
+				<p>This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. </p>
+				<hr/>
+				<marquee>
+					<img src="images/1.jpg" alt="image"/>
+					<img src="images/2.jpg" alt="image"/>
+					<img src="images/3.jpg" alt="image"/>
+				</marquee>
+				<hr/>	
+				<p>This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. </p>				
+				</td>
+				<td class="panels">
+				<p>This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. This is my Sample Text. </p>
+				
+				</td>
+			</tr>
+			<!-- content -->
+			<!-- footer -->
+			<tr>
+				<td colspan="3" id="footer">
+					&copy; Copyright 2015. All Rights Reserved.
+				</td>
+			</tr>
+			<!-- footer -->
+		</table>
+	</body>
+</html>

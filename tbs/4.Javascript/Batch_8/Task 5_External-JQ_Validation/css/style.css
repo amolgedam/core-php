@@ -1,0 +1,11 @@
+body
+{
+	font-family:verdana;
+	font-size:14px;
+}
+.error
+{
+	background-color:red;
+	color:#fff;
+	padding:3px;
+}
